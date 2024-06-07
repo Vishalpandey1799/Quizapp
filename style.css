@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%)
+;
+ 
+}
+
+.quizcontainer{
+    width: 400px;
+    
+    height: 200px;
+   
+ 
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(30, 42, 66, 0.75);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+ 
+    
+
+}
+
+.entry>h3{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 10px;
+}
+
+.entry{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+   
+    padding: 10px;
+    
+
+    
+}
+
+.optionBtn{
+    width: 100%;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+ 
+.optionBtn>button{
+    padding:10px;
+    outline: 0;
+    border: 0;
+    border-radius: 0px 10px 5px 8px;
+    border-bottom: 3px solid chartreuse ;
+     background-color: rgb(21, 131, 221);
+    transition: all 0.3s ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 17px;
+    font-weight: bolder;
+   width: 60%;
+     
+}
+
+.allthing{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+   
+}
+
+.entry .No{
+    border-radius: 8px 0px 10px 8px;
+    border-bottom: 3px solid cornsilk ;
+     background-color: chocolate;
+     
+
+}
+
+
+
+.qHeading{
+    color: white;
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 3px solid rosybrown;
+    padding:  25px 0px;
+}
+
+ .questions{
+    margin-top: 5px;
+ }
+
+.answerBtn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+.answerBtn>button{
+    padding: 15px;
+    border: 0;
+    outline:0 ;
+    border-radius: 10px;
+     background-color: #fff;
+    color: #222;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 15px;
+}
+
+ 
+
+
+.nxtBtn{
+    padding: 10px;
+    border:0;
+    width: 60%;
+     background-color: teal;
+      color: #fff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+   
+     
+}
+
+.answer:hover:not(:disabled){
+    background-color: black;
+    color: white;
+}
+
+button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+:disabled{
+    cursor:not-allowed;
+
+}
+
+button:hover{
+    margin-bottom: -7px;
+}
+
+ 
+ 
+.answerBtn > .correct{
+    transition: all 0.3s ease-in;
+    letter-spacing: 1px;
+    background-color: rgb(18, 244, 10);
+}
+ 
+.answerBtn > .wrong{
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    background-color: red;
+}
+
+.nexttime{
+    color: white;;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  
+ }
